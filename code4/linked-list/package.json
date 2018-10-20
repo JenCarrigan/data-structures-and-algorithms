@@ -1,0 +1,13 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "A singly linked list is a linked list of nodes where each node points to the next one in the list.",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test": "jest --verbose --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
