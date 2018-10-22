@@ -1,0 +1,13 @@
+{
+  "name": "code6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test": "jest --verbose --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
