@@ -1,0 +1,16 @@
+{
+  "name": "code8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "test": "jest --coverage --verbose --watchall"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
