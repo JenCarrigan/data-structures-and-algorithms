@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1541040339465" clover="3.2.0">
+  <project timestamp="1541040339465" name="All files">
+    <metrics statements="47" coveredstatements="39" conditionals="57" coveredconditionals="46" methods="6" coveredmethods="6" elements="110" coveredelements="91" complexity="0" loc="47" ncloc="47" packages="1" files="1" classes="1">
+      <file name="multi-bracket-validation.js" path="/Users/jencarrigan/Documents/GitHub/data-structures-and-algorithms/code13/multi-bracket-validation.js">
+        <metrics statements="47" coveredstatements="39" conditionals="57" coveredconditionals="46" methods="6" coveredmethods="6"/>
+        <line num="3" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="16" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="29" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="41" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="59" count="16" type="cond" truecount="5" falsecount="0"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="62" count="10" type="cond" truecount="5" falsecount="0"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="65" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="68" count="7" type="cond" truecount="5" falsecount="0"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="71" count="5" type="cond" truecount="4" falsecount="1"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="74" count="4" type="cond" truecount="4" falsecount="1"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="4" type="cond" truecount="2" falsecount="3"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="82" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
