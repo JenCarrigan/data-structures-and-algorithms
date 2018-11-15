@@ -1,0 +1,26 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "# Reverse an Array <!-- Code Challenge 01 -->",
+  "main": "array_reverse.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test": "jest --verbose --coverage --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenCarrigan/data-structures-and-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenCarrigan/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/JenCarrigan/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
