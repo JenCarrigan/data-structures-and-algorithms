@@ -58,16 +58,30 @@ class HashMap {
     return hash;
   }
   
-  delete(key) {
-    
-  }
-  
   serialize() {
-    
+    return JSON.stringify(this.map);
   }
   
-  deserialize() {
-    
+  deserialize(str) {
+    if(!str) {
+      return 'Please pass me a valid JSON string!';
+    }
+
+    // valid JSON tester found online - regex is magic
+    if (/^[\],:{}\s]*$/.test(str.replace(/\\["\\\/bfnrtu]/g, '@')
+      .replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']')
+      .replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
+      
+      let obj = JSON.parse(str);
+      this.size = obj.length;
+      this.map = new Array(this.size);
+      Object.assign(this.map, obj);
+      return this.map;
+
+    }
+    else {
+      return 'Please pass me a valid JSON string!';
+    }
   }
   
 }

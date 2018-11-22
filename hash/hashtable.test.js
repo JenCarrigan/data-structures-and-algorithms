@@ -52,4 +52,30 @@ describe('Hash Table', () => {
   it('should return the index of the key if it does exist', () => {
     expect( hm.getHash('Jen') ).toBe(3);
   });
+
+  it('should return null if serialize hashmap empty', () => {
+    let newHash = new HashMap();
+    expect( newHash.serialize() ).toBe('[null]');
+  });
+
+  it('should return a string if serialized', () => {
+    hm.add('Katherine', 'Pandas');
+    expect( typeof hm.serialize() ).toBe('string');
+    expect( hm.serialize() ).toContain('Katherine');
+  });
+
+  it('should return err if tryin to deserialize wrong or no JSON', () => {
+    let newHash = new HashMap();
+    let response = newHash.deserialize('I am a little teapot');
+    expect(response).toBe('Please pass me a valid JSON string!');
+    expect( newHash.deserialize() ).toBe('Please pass me a valid JSON string!');
+  });
+
+  it('should deserialize valid JSON', () => {
+    let str = hm.serialize();
+    let newHash = new HashMap();
+    newHash.deserialize(str);
+    expect( newHash.getHash('Jen') ).toBe(3);
+  });
+  
 });
