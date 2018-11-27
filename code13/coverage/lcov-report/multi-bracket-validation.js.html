@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for multi-bracket-validation.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> multi-bracket-validation.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">82.98% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>39/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.7% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>46/57</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">82.98% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>39/47</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Node {
+  constructor (val, next = null) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (val === null) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('Please enter a value for your node!');</span>
+    }
+    this.value = val;
+    this.next = next;
+  }
+}
+&nbsp;
+class Stack {
+  constructor (node = null) {
+    this.top = node;
+  }
+   push(val) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (val === null || val === undefined) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('Please insert a value');</span>
+    }
+    if (this.top === null) {
+      this.top = new Node(val);
+      return this;
+    }
+    else {
+      this.top = new Node(val, this.top);
+      return this;
+    }
+  }
+   pop() {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (arguments.length &gt; 0) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('I do not need an argument!');</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (this.top === null) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('Stack empty!');</span>
+    }
+     let tmp = this.top;
+    this.top = this.top.next;
+    tmp.next = null;
+    return tmp;
+  }
+   peek() {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (arguments.length &gt; 0) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('I do not need an argument!');</span>
+    }
+    return this.top;
+  }
+}
+&nbsp;
+module.exports = (str) =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!arguments) {
+<span class="cstat-no" title="statement not covered" >    return false;</span>
+  }
+&nbsp;
+  if(typeof str !== 'string') {
+    return false;
+  } 
+&nbsp;
+  let stack = new Stack();
+  for (let i = 0; i &lt; str.length; i++) {
+    if(str.charAt(i) === '(' || str.charAt(i) === '{' || str.charAt(i) === '[') {
+      stack.push(str.charAt(i));
+    }
+    else if (str.charAt(i) === ')' &amp;&amp; stack.top !== null &amp;&amp; stack.peek().value === '(') {
+      stack.pop();
+    }
+    else if (str.charAt(i) === '}' &amp;&amp; stack.top !== null &amp;&amp; stack.peek().value === '{') {
+      stack.pop();
+    }
+    else if (str.charAt(i) === ']' &amp;&amp; stack.top !== null &amp;&amp; stack.peek().value === '[') {
+      stack.pop();
+    }
+    else if (str.charAt(i) === ')' &amp;&amp; (stack.top === null || <span class="branch-2 cbranch-no" title="branch not covered" >stack.peek().value !== '(' </span>)) {
+      return false;
+    }
+    else <span class="missing-if-branch" title="if path not taken" >I</span>if (str.charAt(i) === '}' &amp;&amp; (stack.top === null || stack.peek().value !== '(')) {
+<span class="cstat-no" title="statement not covered" >      return false;</span>
+    }
+    else <span class="missing-if-branch" title="if path not taken" >I</span>if (str.charAt(i) === ']' &amp;&amp; (<span class="branch-1 cbranch-no" title="branch not covered" >stack.top === null </span>|| <span class="branch-2 cbranch-no" title="branch not covered" >stack.peek().value !== '(')</span>) {
+<span class="cstat-no" title="statement not covered" >      return false;</span>
+    }
+  }
+&nbsp;
+  if(stack.top !== null) {
+    return false;
+  }
+  else {
+    return true;
+  }
+};</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Oct 31 2018 19:45:39 GMT-0700 (Pacific Daylight Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
