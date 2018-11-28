@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class HashMap {
   constructor(size) {
@@ -92,7 +92,7 @@ const leftJoin = (hash1, hash2) => {
   if(!hash1 instanceof HashMap || !hash2 instanceof HashMap) {
     return err;
   }
-  
+
   let arr = [];
   for (let i = 0; i < hash1.map.length; i++) {
     let forArr = [];
