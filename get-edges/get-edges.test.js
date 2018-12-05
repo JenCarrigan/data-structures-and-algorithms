@@ -43,7 +43,7 @@ describe('Get Edges', () => {
   });
 
   it('should return total cost if direct edge between', () => {
-    let arr = [ten, six, eight, seven];
-    expect( getEdge(graph, arr) ).toBe(4);
-  });
+    let arr = [ten, three, eight];
+    expect( getEdge(graph, arr) ).toBe(5);
+  })
 });
