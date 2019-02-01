@@ -1,0 +1,16 @@
+{
+  "name": "code28",
+  "version": "1.0.0",
+  "description": "",
+  "main": "left-join.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
